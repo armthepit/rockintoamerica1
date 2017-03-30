@@ -40,8 +40,7 @@ header {
     padding: 10px 0 10px 0;
 }
 
-.navbar {
-}
+.navbar {}
 
 .navbar-default {
     background-color: #ffffff;
@@ -81,6 +80,7 @@ header {
 .navbar-default .navbar-nav > .active > a:focus {
     color: #ffffff;
     background-color: #376db4;
+    border-radius: 10px;
 }
 
 .navbar-default .navbar-nav > .open > a,
@@ -88,6 +88,7 @@ header {
 .navbar-default .navbar-nav > .open > a:focus {
     color: #ffffff;
     background-color: #376db4;
+    border-radius: 10px;
 }
 
 .navbar-default .navbar-toggle {
@@ -120,15 +121,58 @@ header {
     color: #ffffff;
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    font-weight: bold;
+    color: #376db4;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    background: #376db4;
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #376db4;
+}
+
+input[type="text"],
+textarea {
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid #376dba !important;
+}
+
+.btn-default {
+    color: #ffffff;
+    background-color: #376dba;
+    border-color: #ffffff;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+    color: #FFFFFF;
+    background-color: #254a79;
+    border-color: #ffffff;
+}
+
 .content {
     border-bottom: 3px double #ff0000;
+    padding: 5px;
 }
 
 footer {
     background: #376db4;
     color: #ffffff;
+    font-size: 14px;
     padding: 10px 0 10px 0;
-    text-align: center;    
+    text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -136,15 +180,16 @@ footer {
         font-size: 14px;
     }
     .navbar-default .navbar-brand {
-    color: #376db4;
-    font-size: 18px;
-}
+        color: #376db4;
+        font-size: 18px;
+    }
     .navbar-default .navbar-toggle .icon-bar {
         background: #376db4;
         color: #ffffff;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #ffffff;
+        font-weight: bold;
+        color: #376db4;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -157,4 +202,11 @@ footer {
         color: #ffffff;
         background-color: #376db4;
     }
+    footer {
+        background: #376db4;
+        color: #ffffff;
+        font-size: 10px;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }    
 }
