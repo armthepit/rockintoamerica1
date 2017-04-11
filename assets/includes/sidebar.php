@@ -4,19 +4,17 @@
             <div class="list-group">
                 <a href="#genres" class="list-group-item sidebarmenu" data-toggle="collapse"> <span class="sidebarheader">Genres</span></a>
                 <div class="collapse pos-absolute" id="genres">
-                    <a href="#" class="list-group-item submenu">Acoustic</a>
-                    <a href="#" class="list-group-item submenu">Blues</a>
-                    <a href="#" class="list-group-item submenu">Christian</a>
-                    <a href="#" class="list-group-item submenu">Compilation</a>
-                    <a href="#" class="list-group-item submenu">Country</a>
-                    <a href="#" class="list-group-item submenu">EDM</a>
-                    <a href="#" class="list-group-item submenu">Folk</a>
-                    <a href="#" class="list-group-item submenu">Hip Hop / Rap</a>
-                    <a href="#" class="list-group-item submenu">Jazz</a>
-                    <a href="#" class="list-group-item submenu">Metal</a>
-                    <a href="#" class="list-group-item submenu">Punk</a>
-                    <a href="#" class="list-group-item submenu">Rhythm & Blues</a>
-                    <a href="#" class="list-group-item submenu">Rock</a>
+                    <?php
+                        $get_genres = "SELECT * FROM `genre` ORDER BY `genre_name` ASC";
+                        $run_genres = mysqli_query($connection, $get_genres);
+
+                        while ($row_genres=mysqli_fetch_array($run_genres)) {
+                            $genre_id = $row_genres['id'];
+                            $genre_name = $row_genres['genre_name'];
+                            $number_cds = $row_genres['number_cds'];
+                            echo("<a href='#' class='list-group-item submenu'>$genre_name <span class='badge'>$number_cds</span></a>");
+                        } 
+                    ?>                      
                 </div>
             </div>
         </div>
@@ -25,8 +23,17 @@
         <div class="list-group sidebarmenu sidebaritem">
             <div class="list-group sidebarmenu"> <a href="#artist" class="list-group-item sidebarmenu" data-toggle="collapse"><span class="sidebarheader">Artists</span></a>
                 <div class="collapse pos-absolute" id="artist">
-                    <a href="#" class="list-group-item submenu">A</a>
-                    <a href="#" class="list-group-item submenu">B</a>
+                    <?php
+                        $get_artists = "SELECT * FROM `artist` ORDER BY `letter` ASC";
+                        $run_artists = mysqli_query($connection, $get_artists);
+
+                        while ($row_artists=mysqli_fetch_array($run_artists)) {
+                            $artist_id = $row_artists['id'];
+                            $artist_letter = $row_artists['letter'];
+                            $number_artists = $row_artists['number_artists'];
+                            echo("<a href='#' class='list-group-item submenu'>$artist_letter <span class='badge'>$number_artists</span></a>");
+                        } 
+                    ?>   
                 </div>
             </div>
         </div>

@@ -146,6 +146,11 @@ span.title {
   color: #376db4;
 }
 
+.badge {
+    background: #ff0000;
+    color: #ffffff;
+}
+
 .sidebarheader {
     font-size: 14px;
 }
