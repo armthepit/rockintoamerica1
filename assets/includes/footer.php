@@ -14,7 +14,7 @@
     <a target="_blank" href="http://www.websitesforeveryoneelse.com">
         &nbsp;Websites For Everyone Else&nbsp;
     </a> 
-    <br/>(c)2011 -
+    (c)2011 -
     <script language="JavaScript">
 	    <!--- Hide from old browsers
 	    document.write(y0);
