@@ -4,6 +4,14 @@ body {
     color: #000000;
 }
 
+.maincontainer {
+    padding: 20px 0 50px 0;
+    margin: 5px 0 0 0;
+    background: #fff;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
 a:link {
     text-decoration: none;
     font-weight: bold;
@@ -29,8 +37,8 @@ a:active {
     color: #ffffff;
 }
 
-.container-fluid {
-    padding: 0px;
+.nopadding {
+    padding: 0!important;
 }
 
 header {
@@ -39,14 +47,14 @@ header {
 }
 
 header .well {
-  -webkit-box-shadow: none;
-  -ms-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-  padding: 0;
-  padding-top: 20px;
-  border: 0;
-  background: transparent;
+    -webkit-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+    padding-top: 20px;
+    border: 0;
+    background: transparent;
 }
 
 #mainmenu.navbar-default .navbar-brand {
@@ -58,7 +66,7 @@ header .well {
     background-color: #ffffff;
     border-bottom: 1px solid #ff0000;
     padding: 0 15px 0 0;
-    margin: 0;   
+    margin: 0;
 }
 
 #mainmenu.navbar-default .navbar-nav>li>a {
@@ -79,7 +87,7 @@ header .well {
 #mainmenu.navbar-default .navbar-nav>.active>a:focus {
     color: #ffffff;
     background-color: #376db4;
-    border-radius: 5px;    
+    border-radius: 5px;
 }
 
 #mainmenu.navbar-default .navbar-toggle {
@@ -128,6 +136,60 @@ textarea {
     color: #ffffff;
 }
 
+span.title {
+  display: block;
+  border-bottom: 2px solid #ff0000;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #376db4;
+}
+
+.sidebarheader {
+    font-size: 14px;
+}
+
+.sidebaritem {
+    font-size: 12px;
+}
+
+.sidebarmenu a:link {
+/*    font-size: 12px;*/
+    text-decoration: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: #376db4;
+}
+
+.sidebarmenu a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ffffff;
+    color: #376db4;
+}
+
+.sidebarmenu a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #376db4;
+    border-radius: 5px;
+}
+
+.sidebarmenu a:active {
+    text-decoration: none;
+    font-weight: bold;
+    color: #376db4;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.menu-ico-collapse {
+  float:right;
+}
+
 footer {
     background: #376db4;
     color: #ffffff;
@@ -138,21 +200,19 @@ footer {
 }
 
 @media (min-width: 767px) {
-  .nav-container {
-    padding: 0;
-  }
+    .nav-container {
+        padding: 0;
+    }
 }
 
 @media (max-width: 767px) {
     header: {
         padding: 0 0 0 5px;
     }
-
     #mainmenu.navbar-default {
         font-size: 14px;
-        padding: 0 10px 0 10px;   
+        padding: 0 10px 0 10px;
     }
-
     footer {
         background: #376db4;
         color: #ffffff;

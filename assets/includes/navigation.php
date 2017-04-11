@@ -1,9 +1,9 @@
 <nav id="mainmenu" class="navbar navbar-default navbar-fixed-static" role="navigation">
-    <div class="container nav-container">
+    <div class="container-fluid nav-container">
         <div style="float:right" class="hidden-sm hidden-xs">
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#"><i class="fa fa-shopping-cart fa-fw"></i> Shopping Cart</a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i> Shopping Cart</a></li>
                 </ul>
             </div>
         </div>        
@@ -28,7 +28,7 @@
                 </li>
                 <li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i> My Account</a>
                 </li>
-                <li class="hidden-lg hidden-md"><a href="#"><i class="fa fa-shopping-cart fa-fw"></i> Shopping Cart</a></li>               
+                <li class="hidden-lg hidden-md"><a href="#"><i class="fa fa-shopping-cart"></i> Shopping Cart</a></li>               
             </ul>
         </div>
     </div>
