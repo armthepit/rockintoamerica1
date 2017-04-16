@@ -1,6 +1,7 @@
 <?php
     $page_title  = "Rockin To America";
     $page_description = "Rockin To America is";
+    $test = mytest;
 ?>
 <?php require_once("assets/includes/header.php");?>
 <?php require_once("assets/php/db_connect.php");?>

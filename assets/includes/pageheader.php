@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-8 hidden-sm hidden-xs">
                 <div class="well">
-                    <img src="assets/images/logo.png" alt="<?php header_alt() ?>">
+                    <img src="<?php home_url() ?>assets/images/logo.png" alt="<?php header_alt() ?>">
                 </div>
             </div>
             <div class="col-md-4 col-sm-8 col-xs-12">

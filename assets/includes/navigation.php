@@ -20,9 +20,9 @@
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                <li><a href="#" id="home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                 </li>
-                <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Latest Arrivals</a>
+                <li><a href="#" id="latestarrivals"><i class="fa fa-calendar" aria-hidden="true"></i> Latest Arrivals</a>
                 </li>
                 <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Best Sellers</a>
                 </li>

@@ -31,7 +31,7 @@
                             $artist_id = $row_artists['id'];
                             $artist_letter = $row_artists['letter'];
                             $number_artists = $row_artists['number_artists'];
-                            echo("<a href='#' id='artist' class='list-group-item submenu' data-artist='$artist_letter'> $artist_letter <span class='badge'>$number_artists</span></a>");
+                            echo("<a href='#' id='artist' class='list-group-item submenu' data-artist='$artist_letter'>$artist_letter <span class='badge'>$number_artists</span></a>");
                         } 
                     ?>   
                 </div>
