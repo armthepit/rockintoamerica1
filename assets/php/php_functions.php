@@ -1,13 +1,13 @@
 <?php
 
-    function page_title() {
-        global $page_title;
-        echo $page_title;    
+    function page_title($page_title) {
+        $title = $page_title;
+        return $title;    
     }
 
-    function page_description() {
-        global $page_description;
-        echo $page_description;    
+    function page_description($page_description) {
+        $description = $page_description;
+        return $description;    
     }
 
     function home_url() {
@@ -20,6 +20,6 @@
         echo $header_alt;    
     }
 
-      
+     
 
 ?>

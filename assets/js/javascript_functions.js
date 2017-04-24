@@ -2,7 +2,6 @@ $(document).ready(function(){
 
 	$("#home").click(function(){
 		$("#pageHeader").html("Featured CDs").show();
-		
 	});	
 
 	$("#latestarrivals").click(function(){
@@ -19,13 +18,7 @@ $(document).ready(function(){
 		$("#pageHeader").html(letter).show();
 	});
 
-	function searchCds(searchValue) {
-		// alert(searchValue);
-		var url = "../php/latestarrivals.php";
-		$.post(url, {searchValue: searchValue}, function(data) {
-			alert(data);
-		});
-	}
+
 
 });
 

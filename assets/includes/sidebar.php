@@ -8,6 +8,12 @@
                         $get_genres = "SELECT * FROM `genre` ORDER BY `genre_name` ASC";
                         $run_genres = mysqli_query($connection, $get_genres);
 
+                        if($run_genres != "") {
+                            console.log("records found");
+                        } else {
+                            console.log("no records");
+                        }
+
                         while ($row_genres=mysqli_fetch_array($run_genres)) {
                             $genre_id = $row_genres['id'];
                             $genre_name = $row_genres['genre_name'];
