@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
-	$("#home").click(function(){
-		$("#pageHeader").html("Featured CDs").show();
-	});	
+	// $("#home").click(function(){
+	// 	$("#pageHeader").html("Featured CDs").show();
+	// });	
 
-	$("#latestarrivals").click(function(){
-		$("#pageHeader").html("Latest Arrivals").show();
-	});
+	// $("#latestarrivals").click(function(){
+	// 	$("#pageHeader").html("Latest Arrivals").show();
+	// });
 		     
 	$("#genre.submenu").click(function(){
 		var genre = $(this).data('genre');

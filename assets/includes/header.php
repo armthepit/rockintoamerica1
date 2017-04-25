@@ -1,5 +1,3 @@
-<?php include('assets/php/php_functions.php'); ?> 
-
 <!DOCTYPE html>
 
 <head>
