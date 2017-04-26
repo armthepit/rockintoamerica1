@@ -20,8 +20,15 @@
         echo $header_alt;    
     }
 
-    function genres_menu($connection) {
+    function content_title($content_title) {
+        $content = $content_title;
+        return $content;    
+    }   
+
+    function genres_menu($connection)  {
         $database = $connection;
+        $field = $search_field;
+        $value = $search_value;
         $get_genres = "SELECT * FROM `genre` ORDER BY `genre_name` ASC";
         $run_genres = mysqli_query($database, $get_genres);
         $genres_list = "";

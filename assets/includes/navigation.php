@@ -22,11 +22,11 @@
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="index.php" id="home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                 </li>
-                <li><a href="latestarrivals.php" id="latestarrivals"><i class="fa fa-calendar" aria-hidden="true"></i> Latest Arrivals</a>
+                <li><a href="newreleases.php" id="latestarrivals"><i class="fa fa-calendar" aria-hidden="true"></i> New Releases</a>
                 </li>
-                <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Best Sellers</a>
+                <li><a href="bestsellers.php"><i class="fa fa-heart" aria-hidden="true"></i> Best Sellers</a>
                 </li>
-                <li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i> My Account</a>
+                <li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i> Log In / Sign Up</a>
                 </li>
                 <li class="hidden-lg hidden-md"><a href="#"><i class="fa fa-shopping-cart"></i> Shopping Cart</a></li>               
             </ul>

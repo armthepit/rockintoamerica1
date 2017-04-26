@@ -137,13 +137,11 @@ textarea {
     color: #ffffff;
 }
 
-span.title {
+h2.title {
   display: block;
   border-bottom: 2px solid #ff0000;
   padding-bottom: 8px;
   margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: bold;
   color: #376db4;
 }
 
@@ -195,6 +193,25 @@ span.title {
 
 .menu-ico-collapse {
   float:right;
+}
+
+.panel {
+    border: 1px solid #ff0000;
+}
+
+.panel > .panel-heading {
+    background-color: #376db4;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+}
+
+.panel > .panel-body {
+    color: #ff0000;
+}
+
+.panel > .panel-footer {
+    border: 0px solid #ffffff;
+    background-color: #ffffff;
 }
 
 footer {
