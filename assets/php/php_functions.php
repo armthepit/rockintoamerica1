@@ -37,7 +37,7 @@
             $genre_id = $row_genres['id'];
             $genre_name = $row_genres['genre_name'];
             $number_cds = $row_genres['number_cds'];
-            $genres_list = $genres_list."<a href='#' id='genre' class='list-group-item submenu' data-genre='$genre_name'>$genre_name <span class='badge'>$number_cds</span></a>";
+            $genres_list = $genres_list."<a href='genres.php?genre=$genre_name' id='genre' class='list-group-item submenu' data-genre='$genre_name'>$genre_name <span class='badge'>$number_cds</span></a>";
         }
         return $genres_list;     
     } 
